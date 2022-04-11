@@ -239,7 +239,7 @@ const pessoas = [
   })
 console.log(novasPessoas);
 
-//Filter
+//filter
 const pessoasInativas = pessoas.filter((pessoa) => {
     return !pessoa.isActive;
 });
@@ -253,3 +253,13 @@ const pessoasQueMoramNoArizona = pessoas.filter((pessoa) => {
 console.log(pessoasQueMoramNoArizona);
 */ 
 
+//findIndex e splice
+const indice = pessoas.findIndex((pessoa) => {
+  return pessoa.id === "6254a5266c92229bd97d0384";
+})
+console.log(indice);
+console.log(pessoas.length);
+
+pessoas.splice(indice, 1); // primeiro parâmetro é o indice que será removido, segundo quantas posições 
+
+console.log(pessoas.length);
