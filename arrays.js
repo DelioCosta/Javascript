@@ -227,7 +227,7 @@ const pessoas = [
 
     pessoa.tags.forEach((tag) => console.log(tag));
   });
- */ 
+ 
 
   //retorna uma nova lista
   const novasPessoas = pessoas.map((pessoa) => {
@@ -238,3 +238,18 @@ const pessoas = [
     }
   })
 console.log(novasPessoas);
+
+//Filter
+const pessoasInativas = pessoas.filter((pessoa) => {
+    return !pessoa.isActive;
+});
+console.log(pessoasInativas.length);
+
+
+const pessoasQueMoramNoArizona = pessoas.filter((pessoa) => {
+  console.log(pessoa.address.toLowerCase().indexOf("arizon"));
+  return pessoa.address.toLowerCase().indexOf("arizo") != -1; // onde ele não encontra o filtro ele retorna -1
+});
+console.log(pessoasQueMoramNoArizona);
+*/ 
+
