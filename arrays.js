@@ -215,7 +215,7 @@ const pessoas = [
     },
   ];
 
-/* 
+
   for (let i = 0; i < pessoas.length; i++){
     const pessoa = pessoas[i];
     console.log(pessoa.name);
@@ -251,7 +251,7 @@ const pessoasQueMoramNoArizona = pessoas.filter((pessoa) => {
   return pessoa.address.toLowerCase().indexOf("arizo") != -1; // onde ele não encontra o filtro ele retorna -1
 });
 console.log(pessoasQueMoramNoArizona);
-*/ 
+
 
 //findIndex e splice
 const indice = pessoas.findIndex((pessoa) => {
